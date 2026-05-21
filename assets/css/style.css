@@ -9,12 +9,12 @@
     display: grid;
     grid-template-areas:
         "navbar navbar"
-        "menu-lateral content"
+        "sidebar content"
         "foot foot"
     ;
     min-height: 100dvh;
     grid-template-columns: 250px auto;
-    grid-template-rows: 6rem 6fr auto;
+    grid-template-rows: 6rem 1fr auto;
     background-color: #f0e4cc;
     color: #5C3317;
 }
@@ -41,7 +41,7 @@
 
 .navbar-menu {
     display: flex;
-    align-items: last baseline;
+    align-items: center;
 }
 
 .navbar-menu ul {
@@ -49,13 +49,22 @@
     gap: 50px;
 }
 
+li {
+    list-style: none;
+}
+
 .navbar-menu a {
     text-decoration: none;
     color: #FAF0E0;
+    list-style: none;
 }
 
-.menu-lateral {
-    grid-area: menu-lateral;
+.navbar-menu a:hover {
+    color: #5C3317;
+}
+
+.sidebar {
+    grid-area: sidebar;
     background-color: #FAF0E0;
     color: #5C3317;
     display: flex;
@@ -72,12 +81,51 @@
    color: #5C3317;
 }
 
-.content {
+.products-menu a:hover {
+   color: #FF6F61;
+}
+
+.boxes {
     grid-area: content;
 }
 
-.content-section{
-    
+.box-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    background-color: #FAF0E0;
+}
+
+
+.btn-comprar{
+    background-color: #5C3317;
+    color: #FAF0E0;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75rem;
+    border: 0;
+}
+
+.btn-comprar:hover{
+    background-color: #FF6F61;
+}
+
+.box-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .foot {
