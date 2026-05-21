@@ -14,11 +14,9 @@
     ;
     min-height: 100dvh;
     grid-template-columns: 250px auto;
-    grid-template-rows: 75px auto 75px;
-
-
-    background-color: black;
-    color: white;
+    grid-template-rows: 6rem 6fr auto;
+    background-color: #f0e4cc;
+    color: #5C3317;
 }
 
 .navbar {
@@ -66,36 +64,47 @@
     padding: 2rem;
 }
 
-
-.products-menu{
-   
-}
-
 .products-menu a {
     display: flex;
     flex-direction: column;
     padding: 1.5rem 1.25rem;
     text-decoration: none;
    color: #5C3317;
-
 }
 
 .content {
     grid-area: content;
-    border: 2px solid blue;
-
-
 }
 
-.ads {
-    grid-area: ads;
-    border: 2px solid forestgreen;
-
+.content-section{
+    
 }
 
 .foot {
     grid-area: foot;
-    border: 2px solid yellow;
+    background-color: #5C3317;
+    color: #FFBF47;
+    text-shadow: 2px 2px 5px #3D2B1F;
+}
 
+.footer-top{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem 3rem;
+}
 
+.foot-h-line{
+  border: none;
+  height: 0.5px;
+  background-color: #FFBF47;
+  margin: auto;
+}
+
+.footer-bottom{
+text-align: center;
+    padding: 1rem 3rem;
+    color: #FAF0E0;
+    font-size: 1rem;
+    font-weight: 100;
 }
