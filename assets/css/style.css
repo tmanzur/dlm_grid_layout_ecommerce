@@ -92,6 +92,7 @@ li {
 .box-section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
     gap: 20px;
     padding: 20px;
 }
@@ -124,6 +125,13 @@ li {
 .box-img{
     width: 100%;
     height: 300px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.box-img-2{
+    width: 100%;
+    height: 400px;
     object-fit: cover;
     object-position: center top;
 }
